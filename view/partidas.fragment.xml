@@ -1,0 +1,55 @@
+<c:FragmentDefinition xmlns:macros="sap.fe.macros" xmlns:table="sap.ui.table"
+    xmlns="sap.m"
+    xmlns:f="sap.f"
+    xmlns:l="sap.ui.layout"
+    xmlns:html="http://www.w3.org/1999/xhtml"
+    xmlns:c="sap.ui.core"
+>
+   <Table id="partidasTable"
+   items="{ModeloPartidas>/partidas}">
+      <columns>
+         <Column width="10%" hAlign="Right">
+             <Text text=""></Text>
+         </Column>
+
+         <Column width="10%" hAlign="Center">
+             <Text text="Resultados"></Text>
+         </Column>
+
+         <Column width="10%" hAlign="Left">
+             <Text text=""></Text>
+         </Column>
+
+      </columns>
+
+      <ColumnListItem vAlign="Middle">
+        <cells>
+            <Image 
+            src="{ModeloPartidas>time_mandante/escudo}" width="15%"></Image>
+             <VBox >
+                <Text text="{ModeloPartidas>placar}"></Text>
+                <Text text="{ModeloPartidas>data_realizacao}"></Text>
+                <Text text="{ModeloPartidas>status}"></Text>
+             </VBox>
+            <Image 
+            src="{ModeloPartidas>time_visitante/escudo}" width="15%"></Image>
+        </cells>
+
+      </ColumnListItem>
+
+<!--       <ColumnListItem >
+          <cells>
+
+             <Image src="https://logodownload.org/wp-content/uploads/2016/11/botafogo-logo-0.png" width="15%"></Image>
+             <VBox >
+                 <Text text="Botafogo 1 x 2 Flamengo"></Text>     
+                 <Text text="02/09 21:00"></Text>   
+                 <Text text="Finalizado"></Text>      
+             </VBox>
+             <Image src="https://logodownload.org/wp-content/uploads/2016/09/flamengo-logo-0.png" width="15%"></Image>
+            </cells>
+
+      </ColumnListItem> -->
+
+   </Table>
+</c:FragmentDefinition>
