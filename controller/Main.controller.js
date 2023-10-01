@@ -93,7 +93,7 @@ sap.ui.define([
                   async : true,
                   crossDomain : true,
                   headers : {
-                     "Authorization" : "Bearer live_9739d603096625894692fb81f0609b"
+                     "Authorization" : "Bearer test_c9a52d2342e5b88aad9284c9cc980d"
                   }
                 };
                 //chamada da API usando AJAX
@@ -125,7 +125,7 @@ sap.ui.define([
                   async : true,
                   crossDomain : true,
                   headers : {
-                     Authorization : "Bearer live_9739d603096625894692fb81f0609b"
+                     Authorization : "Bearer test_c9a52d2342e5b88aad9284c9cc980d"
                   }
                 }; 
                  
@@ -153,7 +153,7 @@ sap.ui.define([
                               async : true,
                               crossDomain : true,
                               headers : {
-                                 Authorization : "Bearer live_9739d603096625894692fb81f0609b"
+                                 Authorization : "Bearer test_c9a52d2342e5b88aad9284c9cc980d"
                               }
                             }; 
 
